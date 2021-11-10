@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 选择.nav里所有最近一级a标签元素 */
+        .nav>a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    子选择器只能选择作为某一元素的最近一级子元素，简单理解就是选亲儿子元素<br>
+    <div class="nav">
+        <a href="#">我是儿子</a>
+        <p>
+            <a href="#">我是孙子</a>
+        </p>
+    </div>
+</body>
+
+</html>
