@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>链接伪类选择器</title>
     <style>
         /* 未访问过的链接  a:link*/
         a:link {
@@ -33,8 +33,11 @@
 <body>
     伪类选择器用于某些选择器添加特殊的效果，比如给链接添加特殊效果，或选择第1个，第n个元素<br>
     书写用冒号：表示，比如 ：hover、：first-child<br>
+    为确保生效，请按照LVHA的顺序声明：:link-:visited-:hover-:active<br>
+    因为a链接在浏览器具有默认样式，所以实际工作需要给链接单独指定样式<br>
+
     <a href="#">小猪佩奇</a>
-    <a href="http://www.xxxxxxx.com" _blank>未知的网站</a>
+    <a href="http://www.xxxxxxx.com" target="_blank">未知的网站</a>
 
 </body>
 
