@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .damao,
+        .ermao {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+        }
+
+        .damao {
+            margin-bottom: 100px;
+        }
+
+        .ermao {
+            margin-top: 200px;
+        } */
+
+        /* 取了较大值作为外边距 */
+        /* 外边距合并，相邻元素垂直外边距的合并，尽量只给一个盒子添加外边距 */
+
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: purple;
+            margin-top: 50px;
+            /* border: 1px solid transparent; */
+            /* padding: 1px; */
+            overflow: hidden;
+
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="damao">大毛</div>
+    <div class="ermao">二毛</div> -->
+
+    嵌套块元素外边距合并<br>
+    对于两个嵌套的块元素，父元素上外边距同时子元素也有外边距，此时父元素会塌陷较大的外边距值<br>
+    解决方案：1-为父元素加边框
+    2-为父元素定义内边距
+    3-为父元素添加overflo：hidden
+
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>
