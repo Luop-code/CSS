@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 2000px;
+            height: 2000px;
+            background-color: skyblue;
+            /* 不要落下url */
+            background-image: url(images/王力宏.jpg);
+
+            /* 不要背景平铺 */
+            background-repeat: no-repeat;
+            /* background-position: center top; */
+
+            /* 背景图片位置，若指定的两个值都是方位名词，right center和 center right 效果等价，与顺序无关 */
+            /* background-position: right center; */
+            /* background-position: center right; */
+
+            /* 此时，水平一定靠右对齐，第二个参数省略，y轴是垂直居中显示 */
+            background-position: right;
+
+            /* 可以理解为从中心点出发 */
+            background-position: top;
+
+            /* background-repeat: repeat x;  x轴平铺 */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

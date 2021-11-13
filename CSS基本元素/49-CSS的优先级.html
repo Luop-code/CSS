@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选择器相同，执行层叠性，不同，根据选择器权值 */
+        div {
+            color: pink !important;
+        }
+
+        /* !important权重最大，>行内样式表>id选择器>类选择器>元素选择器 */
+        .test {
+            color: red;
+        }
+
+        #demo {
+            color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test" id="demo" style="color: purple;">你笑起来真好看</div>
+</body>
+
+</html>
