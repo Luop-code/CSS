@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* float: left; */
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 绝对定位（固定定位）会完全压住盒子
+    浮动元素不同，只会压住它下面的标准流盒子，但不会压住下面标准流盒子里面的文字图片等 ,浮动最初的目的是文字环绕
+    但是绝对、固定定位会完全压住-->
+    <div class="box"></div>
+    <p>阁下何不随风起，扶摇直上九万里</p>
+</body>
+
+</html>

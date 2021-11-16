@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* 只有定位的盒子有z-index属性，数值越大，盒子显示级越高 */
+        .xiongda {
+            background-color: red;
+            z-index: 1;
+        }
+
+        .xionger {
+            background-color: green;
+            left: 50px;
+            top: 50px;
+            z-index: 2;
+        }
+
+        .guangtouqiang {
+            background-color: blue;
+            top: 100px;
+            left: 100px;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box xiongda"> 熊大</div>
+    <div class="box xionger">熊二</div>
+    <div class="box guangtouqiang">光头强</div>
+</body>
+
+</html>
