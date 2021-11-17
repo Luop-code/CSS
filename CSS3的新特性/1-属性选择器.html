@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input[value] {
+            color: pink;
+        } */
+
+        /* 只选择type=text的文本框 */
+        /* input[type=text] {
+            color: pink;
+        } */
+        /* 选择是div，且具有class属性，且必须是icon开头的元素 */
+        div[class^=icon] {
+            color: pink;
+        }
+
+        /* 选择是section，且具有class属性，且必须是data结尾的元素 */
+        section[class$=data] {
+            color: skyblue;
+        }
+
+        /*   *=是只要值含有元素就行 */
+
+        /* 属性选择器权重为10，同类选择器 */
+    </style>
+</head>
+
+<body>
+    <!-- 1-利用属性选择器就可以不用借助于类或者id选择器 -->
+    <!-- <input type="text" value="请输入用户名">
+    <input type="text"> -->
+
+    <!-- 2-属性选择器还可以选择属性=值的某些元素 -->
+    <!-- <input type="text" name="" id="">
+    <input type="password" name="" id=""> -->
+
+
+    <!-- 3-属性选择器还可以选择属性值开头的某些元素 -->
+    <div class="icon1">小图标1</div>
+    <div class="icon2">小图标2</div>
+    <div class="icon3">小图标3</div>
+    <div class="icon4">小图标4</div>
+    <div>打酱油</div>
+
+    <!-- 4-属性选择器可以选择属性值结尾的某些元素 -->
+    <section class="icon1-data">熊大</section>
+    <section class="icon2-data">熊二</section>
+    <section class="icon3-ico">光头强</section>
+
+</body>
+
+</html>
