@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        /* 伪元素和标签选择器权值一样，为1 */
+        div::before {
+            /* content属性必须要写 */
+            display: inline-block;
+            content: '我';
+            width: 30px;
+            height: 30px;
+            background-color: red;
+        }
+
+        div::after {
+            content: '你爹';
+        }
+    </style>
+</head>
+
+<body>
+    <!-- before和after是行内元素 -->
+    <div>是</div>
+</body>
+
+</html>

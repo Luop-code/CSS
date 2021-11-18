@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?mzxltu');
+            src: url('fonts/icomoon.eot?mzxltu#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?mzxltu') format('truetype'),
+                url('fonts/icomoon.woff?mzxltu') format('woff'),
+                url('fonts/icomoon.svg?mzxltu#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        div {
+            width: 200px;
+            height: 35px;
+
+            border: 1px solid red;
+        }
+
+        /* after指的是div里面元素的后面，如果div为空，则after就相当于前面 */
+        div::after {
+            content: '';
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>
