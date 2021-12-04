@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        /* translate不会影响其他元素的位置，对行内标签无效果 */
+
+        /* x就是x轴移动位置，y同理 */
+        /* transform: translate(100px, 100px); */
+        /* 只移动x */
+        /* transform: translate(100px, 0); */
+        /* transform: translateX(100px); */
+        /* } */
+
+        div:first-child {
+            transform: translate(30px, 30px);
+            background-color: pink;
+        }
+
+        div:last-child {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
