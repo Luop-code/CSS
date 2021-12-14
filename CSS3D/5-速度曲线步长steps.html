@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            overflow: hidden;
+            font-size: 20px;
+            width: 0;
+            height: 30px;
+            background-color: pink;
+
+            /* 让文字强制一行内显示 */
+            white-space: nowrap;
+            /* steps就是分几步完成动画 */
+            animation: w 2s steps(10) forwards;
+        }
+
+        @keyframes w {
+            100% {
+                width: 200px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>成都理工我在这里等你</div>
+</body>
+
+</html>
