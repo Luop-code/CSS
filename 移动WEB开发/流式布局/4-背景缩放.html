@@ -6,6 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 600px;
+            border: 2px solid red;
+            background: url(../../images/sundaxiaojie.jpg) no-repeat;
+
+            /* 图片 宽度 高度 */
+            /* background-size: 500px 200px; */
+            /* 一个参数肯定是宽度，高度省略，等比例缩放 */
+            /* background-size: 500px; */
+
+            /* background-size: 50%; */
+
+            /* cover要完全覆盖盒子，可能有部分背景图片显示不全 */
+            /* background-size: cover; */
+
+            /* 宽度到了，高度就不会拉伸， 高度到了，宽度也不拉伸 */
+            background-size: contain;
+        }
+    </style>
 </head>
 
 <body>
