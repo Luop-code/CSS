@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            width: 80%;
+            height: 300px;
+            background-color: pink;
+
+            /* align-items: flex-end; */
+
+
+        }
+
+        div span {
+            width: 150px;
+            height: 100px;
+            background-color: skyblue;
+            margin-right: 5px;
+
+        }
+
+        div span:nth-child(2) {
+            /* 2号盒子移到1号盒子前面，数字越小越靠前，默认第一个0 */
+            order: -1;
+        }
+
+        div span:nth-child(3) {
+            /* 单独让3号盒子下来 */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+
+</html>
