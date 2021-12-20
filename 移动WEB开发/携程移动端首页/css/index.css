@@ -1,0 +1,68 @@
+body {
+    color: #000;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+
+    max-width: 540px;
+    margin: 0 auto;
+    background: #f4f4f4;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.search-index {
+    display: flex;
+    /* 固定定位和父级无关 */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    /* 固定的盒子要有宽度 */
+    width: 100%;
+    min-width: 320px;
+    max-width: 540px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+
+}
+
+.search {
+    flex: 1;
+    height: 32px;
+    border: 1.8px solid #0086f6;
+    border-radius: 16px;
+    font-size: 12px;
+    text-indent: 1em;
+    line-height: 30px;
+    color: #666;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, .2); */
+}
+
+
+
+.user {
+    width: 32px;
+    height: 32px;
+
+    /* margin: 10px 10px 0 0; */
+}
+
+
+
+.search-index .user::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/sign.png) no-repeat;
+    background-size: 32px 32px;
+
+
+}
